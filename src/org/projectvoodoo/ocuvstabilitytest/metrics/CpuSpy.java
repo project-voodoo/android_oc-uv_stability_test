@@ -58,8 +58,11 @@ public class CpuSpy {
     // Access functions
     //-------------------------------------------------------------------------
 
+    /** prevent instantiation */
+    private CpuSpy () { }
+
     /** get singleton instance */
-    public CpuSpy getInstance() {
+    public static synchronized CpuSpy getInstance() {
         return mSingleton;
     }
 
@@ -68,6 +71,16 @@ public class CpuSpy {
         return mStates;
     }
 
+    /** get the total state time */
+    public int getTotalStateTime () {
+        // looop through and add up
+        int r = 0;
+        for (CpuState state : mStates) {
+            r += state.duration;
+        }
+
+        return r;
+    }
     //-------------------------------------------------------------------------
     // Member functions
     //-------------------------------------------------------------------------

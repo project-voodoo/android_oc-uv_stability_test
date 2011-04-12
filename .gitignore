@@ -16,3 +16,6 @@
 
 # vim project override settings
 .vimdir
+
+# VJDE project definition file
+project.vjde
