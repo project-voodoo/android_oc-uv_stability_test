@@ -13,3 +13,6 @@
 
 # for Mac users
 .DS_Store
+
+# vim project override settings
+.vimdir
