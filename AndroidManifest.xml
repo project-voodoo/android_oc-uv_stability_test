@@ -25,6 +25,12 @@
             </intent-filter>
         </activity>
 
+        <!-- time_in_state view -->
+        <activity
+            android:name="TimeInStateActivity"
+            android:label="CPU - Time In State">
+        </activity>
+
         <service android:name="org.projectvoodoo.ocuvstabilitytest.stabilityTest" />
     </application>
 </manifest>

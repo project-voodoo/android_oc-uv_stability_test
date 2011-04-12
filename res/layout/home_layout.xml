@@ -4,4 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
+
+    <Button
+        android:id="@+id/ui_button_timeinstateview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TimeInStateActivity"
+        style="@style/HomeButton"
+    />
+
 </LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Time In State"
+            style="@style/TimeInStateHeading"
+            />
+
+        <LinearLayout
+            android:id="@+id/ui_states_view"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/ui_states_warning"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:background="#551111"
+                android:text="No states file found. Are you sure your phone is compatible?"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:id="@+id/ui_header_additional_states"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:visibility="gone"
+                android:text="Unused CPU states"
+                style="@style/TimeInStateHeading"
+                />
+
+            <TextView
+                android:id="@+id/ui_additional_states"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

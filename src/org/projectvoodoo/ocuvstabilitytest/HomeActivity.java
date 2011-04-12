@@ -11,6 +11,8 @@ package org.projectvoodoo.ocuvstabilitytest;
 // imports
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.content.Intent;
 
 /** main home home view */
 public class HomeActivity extends Activity {
@@ -25,5 +27,16 @@ public class HomeActivity extends Activity {
         // set title
         setTitle (getResources().getText(R.string.app_name) + " " +
             getResources().getText(R.string.version_name) );
+    }
+
+    /** handle a button click */
+    public void onButtonClick (View v) {
+
+        switch (v.getId()) {
+        case R.id.ui_button_timeinstateview:
+            startActivity ( new Intent (this, TimeInStateActivity.class) );
+        break;
+
+        }
     }
 }
