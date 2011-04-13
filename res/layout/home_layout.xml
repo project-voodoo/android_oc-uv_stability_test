@@ -13,4 +13,11 @@
         style="@style/HomeButton"
     />
 
+    <Button
+        android:id="@+id/ui_button_nativetestview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="NativeTestActivity"
+        style="@style/HomeButton"
+    />
 </LinearLayout>

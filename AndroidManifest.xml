@@ -31,6 +31,12 @@
             android:label="CPU - Time In State">
         </activity>
 
+        <!-- native test view -->
+        <activity
+            android:name="NativeTestActivity"
+            android:label="Native C Code Test">
+        </activity>
+
         <service android:name="org.projectvoodoo.ocuvstabilitytest.stabilityTest" />
     </application>
 </manifest>

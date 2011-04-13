@@ -33,10 +33,16 @@ public class HomeActivity extends Activity {
     public void onButtonClick (View v) {
 
         switch (v.getId()) {
+
+        // time in states view
         case R.id.ui_button_timeinstateview:
             startActivity ( new Intent (this, TimeInStateActivity.class) );
         break;
 
+        // time in states view
+        case R.id.ui_button_nativetestview:
+            startActivity ( new Intent (this, NativeTestActivity.class) );
+        break;
         }
     }
 }
