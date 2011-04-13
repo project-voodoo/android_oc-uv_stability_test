@@ -1,4 +1,4 @@
-# makefile for use in developing Android applications 
+# makefile for use in developing Android applications
 # used mainly since I have 'make' commands mapped in my editor
 
 # app info
@@ -13,10 +13,22 @@ all : build-debug install-debug
 # clean bin and gen
 clean :
 	ant clean
+	ndk-build clean
 
 # build APK and sign with debug key
 build-debug :
 	ant -q -e debug
+
+# build native code
+build-native :
+	ndk-build
+
+# create all the .h files for our native implementations
+# this will have to been done after the corresponding java class files
+# have been compiled
+build-headers :
+	javah -classpath bin/classes/ -verbose -d jni/ \
+		org.projectvoodoo.ocuvstabilitytest.NativeTestLib
 
 # push the debug APK to the emulator or phone and run it
 install-debug :
