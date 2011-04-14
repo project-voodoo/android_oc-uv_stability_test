@@ -11,6 +11,9 @@
 # generated GUI files
 *R.java
 
+# build location for native crap
+obj/*
+
 # for Mac users
 .DS_Store
 

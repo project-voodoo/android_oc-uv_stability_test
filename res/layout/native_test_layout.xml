@@ -5,4 +5,9 @@
     android:layout_height="fill_parent"
     >
 
+    <Button
+        android:id="@+id/ui_button_dostuff"
+        android:text="do some native stuff"
+        style="@style/HomeButton"
+    />
 </LinearLayout>
